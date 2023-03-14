@@ -1,0 +1,5 @@
+# Efficiently reindexing dataframes:
+
+index_list = range(df_user_sig.shape[0])
+new_index_list = np.int64(index_list)
+df_user_sig = df_user_sig.set_index(new_index_list)
