@@ -1,0 +1,5 @@
+def reindex_your_df(df):
+    index_list = range(df.shape[0])
+    new_index_list = np.int64(index_list)
+    df = df.set_index(new_index_list)
+    return df
